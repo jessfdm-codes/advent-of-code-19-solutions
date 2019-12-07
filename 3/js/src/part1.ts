@@ -1,6 +1,5 @@
 import { createInterface } from "readline";
 import { createReadStream } from "fs";
-import { SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION } from "constants";
 
 type coord = [number, number];
 const coordEql = (a: coord, b: coord) => {
