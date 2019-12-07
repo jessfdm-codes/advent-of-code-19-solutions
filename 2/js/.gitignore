@@ -105,3 +105,6 @@ dist
 
 # out
 out/**/*
+
+.vscode/
+.DS_Store
