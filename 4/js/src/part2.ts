@@ -42,7 +42,7 @@ createInterface(createReadStream(process.argv[2])).on("line", l => {
     return true;
   };
 
-  const atLeastOneInstanceOfExactlyTwoDigitsEqual: restriction = n => {
+  const atLeastOneInstanceOfExactlyTwoDigitsEqualRestriction: restriction = n => {
     /* While this does not check for digits next to each other, 
       when combined with neverDecreaseRestriction, 
       it will only be able to count adjacent digits of the same 
@@ -68,7 +68,7 @@ createInterface(createReadStream(process.argv[2])).on("line", l => {
       minRestriction,
       maxRestriction,
       neverDecreaseRestriction,
-      atLeastOneInstanceOfExactlyTwoDigitsEqual
+      atLeastOneInstanceOfExactlyTwoDigitsEqualRestriction
     ]).length
   );
 });
