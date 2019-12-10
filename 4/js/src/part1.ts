@@ -8,11 +8,12 @@ const findAll = (length: number, restrictions: restriction[]): number[] => {
   for (let i = Math.pow(10, length - 1); i < Math.pow(10, length); i++) {
     let okay: boolean = true;
     // Apply all restrictions
-    restrictions.forEach(r => {
+    for (const r of restrictions) {
       if (!r(i)) {
         okay = false;
+        break;
       }
-    });
+    }
 
     if (okay) {
       okayPasswords.push(i);
