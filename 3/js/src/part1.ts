@@ -25,7 +25,7 @@ const nearestIntersect = (line1: string[], line2: string[]) => {
 
   for (let i = 0; i < tracedPath1.length; i++) {
     for (let j = 0; j < tracedPath2.length; j++) {
-      console.log(i + " " + j);
+      //console.log(i + " " + j);
       let intersect = checkIntersect(tracedPath1[i], tracedPath2[j]);
 
       if (intersect !== null) {
