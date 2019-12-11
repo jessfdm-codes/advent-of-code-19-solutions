@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cs
 {
-    class Program
+    class Part1
     {
         static (string parent, string satellite) DecodeOrbit(string inStr)
         {
@@ -14,7 +14,7 @@ namespace cs
             return (split[0], split[1]);
         }
 
-        static async Task Main(string[] args)
+        public static async Task Run(string[] args)
         {
             System.Console.WriteLine(string.Join(",", args));
             if (!File.Exists(args[0]))
